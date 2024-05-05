@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 
 class Search extends React.Component {
   render() {
-    /* when the query value is provided, it is used by search function to return matching results;
-    if there is no matching search results, an empty <li> elelment is returned
-    */
     const { search } = this.props;
     return (
       <div className="search-books">
@@ -21,8 +18,8 @@ class Search extends React.Component {
         </div>
         <div className="search-books-results">
           <ol className="books-grid">
-            {this.props.searchedBooks.length > 0 ? (
-              this.props.searchedBooks.map((book) => (
+            {this.props.searchBooks.length > 0 ? (
+              this.props.searchBooks.map((book) => (
               <li key={book.id}>
                 <Book
                   book={ book }

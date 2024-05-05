@@ -1,10 +1,8 @@
 import React from 'react';
 
 class Selector extends React.Component {
-  /* to get selected value, from the dropdown */
   render() {
     const { shelfUpdate, book } = this.props;
-
     return (
       <div className="book-shelf-changer">
         <select
